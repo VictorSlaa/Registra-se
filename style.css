@@ -1,0 +1,186 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: rgba(0, 0, 0, 0.748);
+	font-family: CabinetGrotesk;
+	width: 100%;
+	height: 100%;
+}
+
+header{
+	display: flex;
+	justify-content:space-between;
+	padding: 20px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	margin: 0 auto;
+	max-width: 1000px;
+
+}
+
+.containerform{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	height: auto;
+	margin: 0 auto;
+	max-width: 1000px;
+
+}
+
+.logo{
+	width: 200px;
+}
+
+.login{
+	display: flex;
+	width: 50px;
+	height: 50px;
+	padding: 20px 35px 20px 35px;
+	justify-content: center;
+	align-items: center;
+	border: solid 2px #ff8c00;
+	border-radius: 5px;
+	color: white;
+	font-weight: 800;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.login{
+	align-self: center;
+}
+
+.login:hover{
+	border: solid 2px #fff;
+	background-color: rgba(0, 0, 0, 0.138);
+	color: #ff8c00;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+h1, h2{
+	color: white;
+	text-align: center;
+}
+
+h1{
+	font-weight: bold;
+	font-size: 40px;
+	padding: 20px;
+}
+
+h2{
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.611);
+	margin-bottom: 20px;
+}
+
+form{
+	display: flex;
+	flex-direction: row;
+	width: 700px;
+}
+
+input{
+	display: inline-block;
+	height: 65px;
+	min-width: 260px;
+	margin: 15px;
+	border-radius: 5px;
+	outline: none;
+	border: 0;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: 25px;
+	font-family: CabinetGrotesk;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#i1{
+	flex: 1;
+}
+#i2{
+	flex: 1;
+}
+#i3{
+	flex: 2;
+}
+#i4{
+	flex: 2;
+}
+.select{
+	width: 100%;
+}
+
+select{
+	display: inline-block;
+	height: 65px;
+	width: 100%;
+	margin: 15px;
+	border-radius: 5px;
+	outline: none;
+	border: 0;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	padding: 25px;
+	font-family: CabinetGrotesk;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+option{
+	font-weight: bold;
+}
+
+.botao{
+	font-family: CabinetGrotesk;
+	width: 100%;
+	background-color: #ff8c00;
+	color: white;
+	height: 65px;
+
+	font-weight: bold;
+}
+
+.botao:hover{
+	border: solid 2px #fff;
+	background-color: rgba(0, 0, 0, 0.138);
+	color: #ff8c00;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.baixo{
+	color: rgb(191, 191, 191);
+	text-align: center;
+	text-decoration: solid;
+}
+
+p a{
+	color: #fff;
+	cursor: pointer;
+}
+
+p a:hover{
+	border-bottom: solid 1px #ff8c00;
+}
+
+@media(max-width:760px) {
+	.containerform{
+		flex-direction: column;
+		width: 100%;
+	}
+	input, select, .botao{
+		width: 90%;
+	}
+}  
+	
